@@ -1,6 +1,6 @@
 import 'package:first_flutter_app/screenUI/bottomnavigation.dart';
 import 'package:first_flutter_app/screenUI/buttonwidget.dart';
-import 'package:first_flutter_app/screenUI/cardview.dart';
+import 'package:first_flutter_app/screenUI/clickableListView.dart';
 import 'package:first_flutter_app/screenUI/containerwidget.dart';
 import 'package:first_flutter_app/screenUI/drawerwidget.dart';
 import 'package:first_flutter_app/screenUI/imagewidget.dart';
@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CardViewWidget(),
+                      builder: (context) => MyClickableList(),
                     ));
               },
               child: Text("CardView"),
