@@ -69,7 +69,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
               border: OutlineInputBorder(),
               //label: Text("Email"),
               labelText: "Password",
-              hintText: "name@email.com",
+              hintText: "Enter your password.",
               errorText: "password is weak.",
               // icon: Icon(Icons.mail),
               prefixIcon: Icon(Icons.mail),

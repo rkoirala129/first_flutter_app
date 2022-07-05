@@ -7,8 +7,10 @@ class ImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final image3 =
         "https://isvr.acceleragent.com/usr/13440499593/CustomPages/images/bigstock-Beautiful-exterior-of-newly-bu-2996625883.jpg";
+
     final image4 =
         "https://charlotte.axios.com/wp-content/uploads/2021/09/509-Poindexter-axios-charlotte-hot-homes.jpg.webp";
+
     return Scaffold(
         appBar: AppBar(
           title: Text("ImageWidget Demo"),
