@@ -5,7 +5,8 @@ import 'package:first_flutter_app/screenUI/containerwidget.dart';
 import 'package:first_flutter_app/screenUI/drawerwidget.dart';
 import 'package:first_flutter_app/screenUI/imagewidget.dart';
 import 'package:first_flutter_app/screenUI/listViewWidget.dart';
-import 'package:first_flutter_app/screenUI/pageviewwidget.dart';
+import 'package:first_flutter_app/screenUI/myFirstPage.dart';
+//import 'package:first_flutter_app/screenUI/pageviewwidget.dart';
 import 'package:first_flutter_app/screenUI/rowcolumn.dart';
 import 'package:first_flutter_app/screenUI/tabbarwidget.dart';
 import 'package:flutter/material.dart';
@@ -37,6 +38,24 @@ class HomePage extends StatelessWidget {
                     ));
               },
               child: Text("Buttons"),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  minimumSize: Size(280, 70),
+                  textStyle: TextStyle(fontSize: 24),
+                  primary: Colors.redAccent,
+                  onPrimary: Colors.black),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FirstPage(),
+                    ));
+              },
+              child: Text("Navigation in Flutter"),
             ),
             SizedBox(
               height: 15,
@@ -123,7 +142,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => PageViewWidget(),
+                      builder: (context) => ListViewWidget(),
                     ));
               },
               child: Text("Page View"),

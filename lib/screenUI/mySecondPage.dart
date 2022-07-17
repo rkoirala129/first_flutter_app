@@ -14,6 +14,8 @@ class _SecondPageState extends State<SecondPage> {
   TextEditingController _num1 = TextEditingController();
   TextEditingController _num2 = TextEditingController();
   int? sum;
+  String aSum = "";
+  String mytext = "";
 
   @override
   Widget build(BuildContext context) {
@@ -58,6 +60,8 @@ class _SecondPageState extends State<SecondPage> {
 
                 setState(() {
                   sum = summ;
+                  aSum = sum.toString();
+                  mytext = "Sum : ${aSum}";
                 });
               }),
               child: Text("Add"),
@@ -65,7 +69,7 @@ class _SecondPageState extends State<SecondPage> {
             SizedBox(
               height: 25,
             ),
-            Text("Sum : ${sum}"),
+            Text(mytext),
             SizedBox(
               height: 25,
             ),

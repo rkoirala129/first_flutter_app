@@ -8,12 +8,15 @@ import 'package:first_flutter_app/screenUI/imagewidget.dart';
 import 'package:first_flutter_app/screenUI/listViewWidget.dart';
 import 'package:first_flutter_app/screenUI/listviewtypes.dart';
 import 'package:first_flutter_app/screenUI/myFirstPage.dart';
-import 'package:first_flutter_app/screenUI/pageviewwidget.dart';
 import 'package:first_flutter_app/screenUI/rowcolumn.dart';
 import 'package:first_flutter_app/screenUI/scaffoldtext.dart';
+import 'package:first_flutter_app/screenUI/statemanagement.dart';
 import 'package:first_flutter_app/screenUI/tabbarwidget.dart';
+import 'package:first_flutter_app/screenUI/testfile.dart';
 import 'package:first_flutter_app/screenUI/textfieldwidget.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,13 +28,16 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(
+    //     SystemUiOverlayStyle(statusBarColor: Colors.amber));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        primaryColor: Colors.red,
         primarySwatch: Colors.purple,
       ),
-      home: const FirstPage(),
+      home: const StateManagement(),
     );
   }
 }
