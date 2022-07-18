@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/screenUI/ProviderSM.dart';
 import 'package:first_flutter_app/screenUI/bottomnavigation.dart';
 import 'package:first_flutter_app/screenUI/buttonwidget.dart';
 import 'package:first_flutter_app/screenUI/clickableListView.dart';
@@ -10,6 +11,7 @@ import 'package:first_flutter_app/screenUI/listviewtypes.dart';
 import 'package:first_flutter_app/screenUI/myFirstPage.dart';
 import 'package:first_flutter_app/screenUI/rowcolumn.dart';
 import 'package:first_flutter_app/screenUI/scaffoldtext.dart';
+import 'package:first_flutter_app/screenUI/smProvider.dart';
 import 'package:first_flutter_app/screenUI/statemanagement.dart';
 import 'package:first_flutter_app/screenUI/tabbarwidget.dart';
 import 'package:first_flutter_app/screenUI/testfile.dart';
@@ -37,7 +39,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         primarySwatch: Colors.purple,
       ),
-      home: const StateManagement(),
+      home: const Providersm(),
     );
   }
 }
