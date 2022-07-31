@@ -19,7 +19,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  String text = "Rupak Koirala";
+  String text = "Data here.";
 
   void changeValue(String newData) {
     setState(() {
