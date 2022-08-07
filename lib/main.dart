@@ -3,6 +3,7 @@ import 'package:first_flutter_app/screenUI/bottomnavigation.dart';
 import 'package:first_flutter_app/screenUI/buttonwidget.dart';
 import 'package:first_flutter_app/screenUI/clickableListView.dart';
 import 'package:first_flutter_app/screenUI/drawerwidget.dart';
+import 'package:first_flutter_app/screenUI/firebasecrud.dart';
 import 'package:first_flutter_app/screenUI/home.dart';
 import 'package:first_flutter_app/screenUI/containerwidget.dart';
 import 'package:first_flutter_app/screenUI/imagewidget.dart';
@@ -21,7 +22,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -40,7 +47,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         primarySwatch: Colors.purple,
       ),
-      home: const SQLiteCrud(),
+      home: FireBaseCrud(),
     );
   }
 }
