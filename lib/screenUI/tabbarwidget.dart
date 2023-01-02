@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/screenUI/imagewidget.dart';
 import 'package:flutter/material.dart';
 
 import 'listViewWidget.dart';
@@ -39,7 +40,7 @@ class _TabBarWidgetState extends State<TabBarWidget> {
               color: Colors.yellow,
               child: Center(
                 child: Text(
-                  "Tab 2",
+                  "Tab 1",
                   style: TextStyle(fontSize: 35),
                 ),
               ),

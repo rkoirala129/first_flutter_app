@@ -38,12 +38,12 @@ class ImageWidget extends StatelessWidget {
               radius: 120,
             ),
             CircleAvatar(
-              radius: 140,
+              radius: 120,
               child: ClipOval(
                 child: Image.network(
                   image3,
-                  width: 300,
-                  height: 300,
+                  width: 240,
+                  height: 240,
                   fit: BoxFit.cover,
                 ),
               ),
@@ -61,7 +61,7 @@ class ImageWidget extends StatelessWidget {
                   "assets/istockphoto-1286833440-612x612.jpg",
                   width: 300,
                   height: 300,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),

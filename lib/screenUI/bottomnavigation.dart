@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/screenUI/listviewtypes.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationbar extends StatefulWidget {
@@ -11,7 +12,8 @@ class _BottomNavigationbarState extends State<BottomNavigationbar> {
   final pages = [
     Home(),
     Favourite(),
-    Contact(),
+    // Contact(),
+    ListViewTypes()
   ];
   var currentindex = 0;
   @override

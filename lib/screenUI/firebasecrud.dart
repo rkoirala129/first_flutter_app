@@ -141,10 +141,11 @@ class _FireBaseCrudState extends State<FireBaseCrud> {
         body: StreamBuilder(
           stream: _products.snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
-            print("Hello");
-            print(streamSnapshot.data!.docs.length);
+            //print("Hello");
+            //  print(streamSnapshot.data!.docs.length);
 
-            print(streamSnapshot.data!.docs[0].data());
+            // print(streamSnapshot.data!.docs[0].data());
+
             if (streamSnapshot.hasError) {
               return const Text('Something went wrong');
             }

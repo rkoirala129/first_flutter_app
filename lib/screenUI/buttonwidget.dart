@@ -46,10 +46,10 @@ class ButtonWidget extends StatelessWidget {
             IconButton(
               iconSize: 70,
               onPressed: () {
-                print("Outlined button pressed.");
+                print("Icon Button  pressed.");
               },
               icon: const Icon(
-                Icons.settings,
+                Icons.home,
                 color: Colors.pink,
               ),
             )

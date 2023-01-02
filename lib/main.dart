@@ -25,6 +25,8 @@ import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+import 'sqlite_crud/screens/notes_screen.dart';
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -47,7 +49,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         primarySwatch: Colors.purple,
       ),
-      home: FireBaseCrud(),
+      home: const NotesScreen(),
     );
   }
 }

@@ -10,7 +10,25 @@ class ListViewTypes extends StatefulWidget {
 class _ListViewTypesState extends State<ListViewTypes> {
   @override
   Widget build(BuildContext context) {
-    final list1 = ["Sunway ", "Global", "LBEF", "Uniglobe", "Softwarica"];
+    final list1 = [
+      "Sunway ",
+      "Global",
+      "LBEF",
+      "Uniglobe",
+      "Sunway ",
+      "Global",
+      "LBEF",
+      "Uniglobe",
+      "Softwarica",
+      "Sunway ",
+      "Global",
+      "LBEF",
+      "Uniglobe",
+      "Sunway ",
+      "Global",
+      "LBEF",
+      "Uniglobe"
+    ];
     return Scaffold(
       appBar: AppBar(
         title: Text("ListView"),
@@ -20,17 +38,17 @@ class _ListViewTypesState extends State<ListViewTypes> {
       // body: ListView(
       //   scrollDirection: Axis.vertical,
       //   children: [
-      //     // Text("Hello"),
-      //     // Text("Sunway"),
-      //     // Text("Hello"),
-      //     // Text("Sunway"),
-      //     // Text("Hello"),
-      //     // Text("Sunway"),
-      //     // Text("Hello"),
-      //     // Text("Sunway"),
-      //     // Text("Sunway"),
-      //     // Text("Hello"),
-      //     // Text("Sunway"),
+      // Text("Hello"),
+      // Text("Sunway"),
+      // Text("Hello"),
+      // Text("Sunway"),
+      // Text("Hello"),
+      // Text("Sunway"),
+      // Text("Hello"),
+      // Text("Sunway"),
+      // Text("Sunway"),
+      // Text("Hello"),
+      // Text("Sunway"),
       //     ListTile(
       //       title: Text("Sunway International"),
       //       subtitle: Text("BCU"),

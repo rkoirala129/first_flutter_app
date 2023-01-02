@@ -10,8 +10,8 @@ class RowColumn extends StatelessWidget {
         title: Text("Row and Column"),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
           Container(color: Colors.amber, width: 75, height: 150),
