@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/auth/login.dart';
 import 'package:first_flutter_app/screenUI/ProviderSM.dart';
 import 'package:first_flutter_app/screenUI/bottomnavigation.dart';
 import 'package:first_flutter_app/screenUI/buttonwidget.dart';
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.red,
         primarySwatch: Colors.purple,
       ),
-      home: const NotesScreen(),
+      home: LoginScreen(),
     );
   }
 }
